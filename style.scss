@@ -12,6 +12,13 @@ $gray: #d6bb89;
     color: white;
 }
 
+@mixin mainType {
+    font-size: 98px;
+    font-family: Type;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+    font-weight: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -89,11 +96,7 @@ body{
     margin-bottom: 230px;
 
     h1{
-        font-size: 98px;
-        font-family: Type;
-        color: rgba($color: #ffffff, $alpha: 0.5);
-        font-weight: normal;
-        right: 350px;
+        @include mainType;
         text-align: right;
     }
 
@@ -153,10 +156,7 @@ body{
     margin-bottom: 300px;
 
     h1{
-        font-family: Type;
-        color: rgba($color: #ffffff, $alpha: 0.5);
-        font-size: 98px;
-        font-weight: normal;
+        @include mainType;
         margin-bottom: 60px;
     }
 
@@ -207,4 +207,51 @@ body{
             }
         }
     }
+}
+
+#menu{
+    @include box;
+    position: relative;
+    margin-bottom: 260px;
+
+    h1{
+        @include mainType;
+        position: absolute;
+        bottom: 572px;
+        right: 100px;
+    }
+
+    #text{
+        padding: 98px 63px;
+        width: 530px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-image: url(./img/background.png);
+
+        p{
+            font-size: 14px;
+            line-height: 1.82;
+            letter-spacing: 1.4px;
+        }
+
+        #line{
+            width: 95px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 10px;
+            right: 120px;
+        }
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            position: absolute;
+            right: 60px;
+            bottom: 0;
+            color: white;
+        }
+    }
+        
 }

@@ -89,7 +89,6 @@ body {
   font-family: Type;
   color: rgba(255, 255, 255, 0.5);
   font-weight: normal;
-  right: 350px;
   text-align: right;
 }
 
@@ -151,9 +150,9 @@ body {
 }
 
 #news h1 {
+  font-size: 98px;
   font-family: Type;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 98px;
   font-weight: normal;
   margin-bottom: 60px;
 }
@@ -204,5 +203,56 @@ body {
 
 #news > div:nth-child(3) #text {
   background-image: url(./img/news/news-bg2.png);
+}
+
+#menu {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  position: relative;
+  margin-bottom: 260px;
+}
+
+#menu h1 {
+  font-size: 98px;
+  font-family: Type;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  position: absolute;
+  bottom: 572px;
+  right: 100px;
+}
+
+#menu #text {
+  padding: 98px 63px;
+  width: 530px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url(./img/background.png);
+}
+
+#menu #text p {
+  font-size: 14px;
+  line-height: 1.82;
+  letter-spacing: 1.4px;
+}
+
+#menu #text #line {
+  width: 95px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 120px;
+}
+
+#menu #text a {
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
