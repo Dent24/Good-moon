@@ -74,4 +74,35 @@ body {
   top: 750px;
   left: 1400px;
 }
+
+#about {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-top: 200px;
+  position: relative;
+}
+
+#about h1 {
+  font-size: 98px;
+  font-family: Type;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal;
+  right: 350px;
+  text-align: right;
+}
+
+#about img {
+  width: 839px;
+  height: 580px;
+}
+
+#about #text {
+  background-image: url(./img/background.png);
+  padding: 50px 25px 25px;
+  width: 485px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /*# sourceMappingURL=style.css.map */

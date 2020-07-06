@@ -6,6 +6,12 @@ $gray: #d6bb89;
     src: url(./font/type-font.ttf);
 }
 
+@mixin box {
+    margin: 0 auto;
+    width: 1200px;
+    color: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -73,5 +79,34 @@ body{
                 left: 1400px;
             }
         }
+    }
+}
+
+#about{
+    @include box;
+    margin-top: 200px;
+    position: relative;
+
+    h1{
+        font-size: 98px;
+        font-family: Type;
+        color: rgba($color: #ffffff, $alpha: 0.5);
+        font-weight: normal;
+        right: 350px;
+        text-align: right;
+    }
+
+    img{
+        width: 839px;
+        height: 580px;
+    }
+
+    #text{
+        background-image: url(./img/background.png);
+        padding: 50px 25px 25px;
+        width: 485px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
