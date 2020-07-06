@@ -252,6 +252,80 @@ body{
             bottom: 0;
             color: white;
         }
+    }     
+}
+
+#member{
+    @include box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 80px;
+
+    div{
+
+        #text{
+            text-align: center;
+            padding-top: 36px;
+
+            h3{
+                font-size: 25px;
+                letter-spacing: 5px;
+                margin-bottom: 26px;
+            }
+
+            ul{
+                list-style: none;
+                line-height: 1.82;
+                letter-spacing: 1.4px;
+            }
+        }
     }
-        
+}
+
+footer{
+    padding-top: 250px;
+    text-align: center;
+
+    #connect{
+        width: 600px;
+        margin: 0 auto 150px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 60px;
+
+        #logo{
+
+            p{
+                color: $gold;
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+
+        #link{
+            text-align: left;
+
+            div{
+                display: grid;
+                grid-template-columns: repeat(2,35px);
+                grid-gap: 30px;
+            }
+
+            p{
+                margin-top: 20px;
+                color: white;
+
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    h5{
+        color: white;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        margin-bottom: 15px;
+    }
 }
