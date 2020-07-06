@@ -81,6 +81,7 @@ body {
   color: white;
   margin-top: 200px;
   position: relative;
+  margin-bottom: 230px;
 }
 
 #about h1 {
@@ -99,10 +100,46 @@ body {
 
 #about #text {
   background-image: url(./img/background.png);
-  padding: 50px 25px 25px;
+  padding: 50px 25px;
   width: 485px;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#about #text h3 {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+
+#about #text p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.82;
+  letter-spacing: 2.2px;
+}
+
+#about #text div {
+  position: absolute;
+  right: 40px;
+  bottom: 25px;
+}
+
+#about #text div #line {
+  display: inline;
+  width: 95px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  right: 80px;
+  bottom: 10px;
+}
+
+#about #text div a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

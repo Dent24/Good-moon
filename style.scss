@@ -86,6 +86,7 @@ body{
     @include box;
     margin-top: 200px;
     position: relative;
+    margin-bottom: 230px;
 
     h1{
         font-size: 98px;
@@ -103,10 +104,46 @@ body{
 
     #text{
         background-image: url(./img/background.png);
-        padding: 50px 25px 25px;
+        padding: 50px 25px;
         width: 485px;
         position: absolute;
         bottom: 0;
         right: 0;
+
+        h3{
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            letter-spacing: 5px;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.82;
+            letter-spacing: 2.2px;
+        }
+
+        div{
+            position: absolute;
+            right: 40px;
+            bottom: 25px;
+
+            #line{
+                display: inline;
+                width: 95px;
+                height: 1px;
+                background:#fff;
+                position: absolute;
+                right: 80px;
+                bottom: 10px;
+            }
+
+            a{
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
 }
