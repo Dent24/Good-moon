@@ -142,4 +142,67 @@ body {
   text-decoration: none;
   color: white;
 }
+
+#news {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-bottom: 300px;
+}
+
+#news h1 {
+  font-family: Type;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 98px;
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+
+#news > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 64% 36%;
+      grid-template-columns: 64% 36%;
+  margin-bottom: 8px;
+}
+
+#news > div #text {
+  padding: 75px 25px 0px 90px;
+  position: relative;
+  background-image: url(./img/news/news-bg1.png);
+}
+
+#news > div #text h3 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+}
+
+#news > div #text h3 span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1.4px;
+  position: absolute;
+  right: 25px;
+}
+
+#news > div #text p {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 1.82;
+}
+
+#news > div #text #line {
+  width: 290px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+#news > div:nth-child(3) #text {
+  background-image: url(./img/news/news-bg2.png);
+}
 /*# sourceMappingURL=style.css.map */
