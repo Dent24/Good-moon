@@ -1,10 +1,19 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Type;
+  src: url(./font/type-font.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: 微軟正黑體;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/background.png);
 }
 
 #banner {
