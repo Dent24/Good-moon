@@ -95,12 +95,15 @@ nav #box #link {
   margin-top: 200px;
 }
 
-#oldNews #slide > div {
-  position: relative;
+#oldNews #slide > div #infor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46.5% 0.02% 53.48%;
+      grid-template-columns: 46.5% 0.02% 53.48%;
+  grid-gap: 40px;
 }
 
-#oldNews #slide > div #info {
-  width: 550px;
+#oldNews #slide > div #infor #info {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 45% 55%;
@@ -109,19 +112,19 @@ nav #box #link {
   margin-bottom: 80px;
 }
 
-#oldNews #slide > div #line {
+#oldNews #slide > div #infor #line {
   width: 2px;
   height: 450px;
   background: #c79669;
-  position: absolute;
-  top: 0;
-  left: 599px;
 }
 
-#oldNews #slide > div #right {
-  position: absolute;
-  top: 0;
-  left: 640px;
+#oldNews #page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#oldNews #page p {
+  display: inline;
 }
 
 footer {

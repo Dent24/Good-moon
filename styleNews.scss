@@ -92,33 +92,35 @@ nav{
     #slide{
 
         > div{
-            // display: grid;
-            // grid-template-columns: 49% 0.02% 50.98% ;
-            // grid-gap: 40px;
-            position: relative;
-            
-            #info{
-                width: 550px;
+
+            #infor{
+
                 display: grid;
-                grid-template-columns: 45% 55%;
-                grid-gap: 10px;
-                margin-bottom: 80px;
+                grid-template-columns: 46.5% 0.02% 53.48% ;
+                grid-gap: 40px;
+                
+                #info{
+                    display: grid;
+                    grid-template-columns: 45% 55%;
+                    grid-gap: 10px;
+                    margin-bottom: 80px;
+                }
+    
+                #line{
+                    width: 2px;
+                    height: 450px;
+                    background: $gold;
+                }
             }
+        }
+    }
 
-            #line{
-                width: 2px;
-                height: 450px;
-                background: $gold;
-                position: absolute;
-                top: 0;
-                left: 599px;
-            }
+    #page{
+        text-align: center;
+        margin-top: 100px;
 
-            #right{
-                position: absolute;
-                top: 0;
-                left: 640px;
-            }
+        p{
+            display: inline;
         }
     }
 }
