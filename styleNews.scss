@@ -1,0 +1,196 @@
+$gold: #c79669;
+
+@font-face{
+    font-family: Type;
+    src: url(./font/type-font.ttf);
+}
+
+@mixin box {
+    margin: 0 auto;
+    width: 1200px;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/background.png);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: rgb(6, 15, 32);
+    z-index: 9999;
+
+    a{
+        text-decoration: none;
+        color: $gold;
+    }
+
+    #box{
+        margin: 30px auto;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        align-items: center;
+
+        #link{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+    }
+}
+
+#banner{
+    width: 100%;
+    background-image: url(./img/about/banner.png);
+    padding: 210px 0 140px;
+    text-align: center;
+
+    color: white;
+
+    h1{
+        font-family: Type;
+        font-size: 98px;
+        font-weight: 300;
+    }
+}
+
+#news{
+    @include box;
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+    
+    div{
+        position: relative;
+        
+        p{
+            text-align: center;
+            color: black;
+            width: 360px;
+            height: 120px;
+            background: #e5e5e5;
+            position: absolute;
+            left: 15px;
+            bottom: -90px;
+        }
+    }
+}
+
+#oldNews{
+    @include box;
+    margin-top: 200px;
+
+    #slide{
+
+        > div{
+            // display: grid;
+            // grid-template-columns: 49% 0.02% 50.98% ;
+            // grid-gap: 40px;
+            position: relative;
+            
+            #info{
+                width: 550px;
+                display: grid;
+                grid-template-columns: 45% 55%;
+                grid-gap: 10px;
+                margin-bottom: 80px;
+            }
+
+            #line{
+                width: 2px;
+                height: 450px;
+                background: $gold;
+                position: absolute;
+                top: 0;
+                left: 599px;
+            }
+
+            #right{
+                position: absolute;
+                top: 0;
+                left: 640px;
+            }
+        }
+    }
+}
+
+footer{
+    padding-top: 250px;
+    text-align: center;
+
+    #connect{
+        width: 600px;
+        margin: 0 auto 150px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 60px;
+
+        #logo{
+
+            p{
+                color: $gold;
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+
+        #link{
+            text-align: left;
+
+            div{
+                display: grid;
+                grid-template-columns: repeat(2,35px);
+                grid-gap: 30px;
+            }
+
+            p{
+                margin-top: 20px;
+                color: white;
+
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    h5{
+        color: white;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        margin-bottom: 15px;
+    }
+}
+
+#right{
+    position: relative;
+
+
+    #totop{
+        position: absolute;
+        right: 135px;
+        bottom: 440px;
+    }
+
+    #booking{
+        position: absolute;
+        right: 120px;
+        bottom: 145px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+
+        p{
+            margin: 11px 0;
+        }
+    }
+}
