@@ -16,7 +16,7 @@ body {
   background-image: url(./img/background.png);
 }
 
-nav {
+#nav {
   display: none;
   position: fixed;
   width: 1920px;
@@ -24,12 +24,12 @@ nav {
   z-index: 9999;
 }
 
-nav a {
+#nav a {
   text-decoration: none;
   color: #c79669;
 }
 
-nav #box {
+#nav #box {
   margin: 30px auto;
   width: 1200px;
   display: -ms-grid;
@@ -41,7 +41,7 @@ nav #box {
           align-items: center;
 }
 
-nav #box #link {
+#nav #box #link {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
