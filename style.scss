@@ -329,3 +329,27 @@ footer{
         margin-bottom: 15px;
     }
 }
+
+#right{
+    position: relative;
+
+
+    #totop{
+        position: absolute;
+        right: 135px;
+        bottom: 440px;
+    }
+
+    #booking{
+        position: absolute;
+        right: 120px;
+        bottom: 145px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+
+        p{
+            margin: 11px 0;
+        }
+    }
+}

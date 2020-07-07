@@ -332,4 +332,27 @@ footer h5 {
   letter-spacing: 1.3px;
   margin-bottom: 15px;
 }
+
+#right {
+  position: relative;
+}
+
+#right #totop {
+  position: absolute;
+  right: 135px;
+  bottom: 440px;
+}
+
+#right #booking {
+  position: absolute;
+  right: 120px;
+  bottom: 145px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#right #booking p {
+  margin: 11px 0;
+}
 /*# sourceMappingURL=style.css.map */
