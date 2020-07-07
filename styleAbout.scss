@@ -1,0 +1,249 @@
+$gold: #c79669;
+$gray: #b4aca4;
+
+@font-face{
+    font-family: Type;
+    src: url(./font/type-font.ttf);
+}
+
+@mixin box {
+    margin: 0 auto;
+    width: 1200px;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/background.png);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: rgb(6, 15, 32);
+    z-index: 9999;
+
+    a{
+        text-decoration: none;
+        color: $gold;
+    }
+
+    #box{
+        margin: 30px auto;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        align-items: center;
+
+        #link{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+    }
+}
+
+#banner{
+    width: 100%;
+    background-image: url(./img/about/banner.png);
+    padding: 210px 0 140px;
+    text-align: center;
+
+    color: white;
+
+    h1{
+        font-family: Type;
+        font-size: 98px;
+        font-weight: 300;
+    }
+}
+
+#about{
+    @include box;
+    margin-top: 200px;
+    position: relative;
+
+    img{
+        width: 839px;
+        height: 580px;
+    }
+
+    #text{
+        background-image: url(./img/background.png);
+        padding: 50px 50px;
+        width: 485px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        h3{
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            letter-spacing: 5px;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.82;
+            letter-spacing: 2.2px;
+        }
+    }
+}
+
+#idea{
+    @include box;
+    margin: 185px auto;
+    text-align: center;
+
+    h1{
+        margin-bottom: 42px;
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.82;
+        letter-spacing: 1.4px;
+    }
+}
+
+#surround{
+    @include box;
+    position: relative;
+    height: 740px;
+
+    #slide1{
+        width: 640px;
+        height: 440px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #slide2{
+        width: 640px;
+        height: 440px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #page{
+        display: grid;
+        grid-template-columns: repeat(2,50px);
+        grid-gap: 5px;
+        position: absolute;
+        bottom: 250px;
+        left: 590px;
+
+        p{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding-top: 15px;
+            background: $gray;
+            border: 0.05 solid $gray;
+        }
+    }
+
+    #text{
+        background-image: url(./img/background.png);
+        width: 460px;
+        padding: 30px 45px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        h1{
+            font-size: 50px;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+        }
+
+        p{
+            line-height: 1.82;
+            letter-spacing: 1.4px;
+        }
+    }
+
+}
+
+footer{
+    padding-top: 250px;
+    text-align: center;
+
+    #connect{
+        width: 600px;
+        margin: 0 auto 150px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 60px;
+
+        #logo{
+
+            p{
+                color: $gold;
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+        }
+
+        #link{
+            text-align: left;
+
+            div{
+                display: grid;
+                grid-template-columns: repeat(2,35px);
+                grid-gap: 30px;
+            }
+
+            p{
+                margin-top: 20px;
+                color: white;
+
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    h5{
+        color: white;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        margin-bottom: 15px;
+    }
+}
+
+#right{
+    position: relative;
+
+
+    #totop{
+        position: absolute;
+        right: 135px;
+        bottom: 440px;
+    }
+
+    #booking{
+        position: absolute;
+        right: 120px;
+        bottom: 145px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+
+        p{
+            margin: 11px 0;
+        }
+    }
+}
