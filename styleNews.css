@@ -93,6 +93,7 @@ nav #box #link {
   width: 1200px;
   color: white;
   margin-top: 200px;
+  position: relative;
 }
 
 #oldNews #slide > div #infor {
@@ -120,11 +121,18 @@ nav #box #link {
 
 #oldNews #page {
   text-align: center;
-  margin-top: 100px;
 }
 
-#oldNews #page p {
-  display: inline;
+#oldNews #page #prev {
+  position: absolute;
+  bottom: 0;
+  left: 400px;
+}
+
+#oldNews #page #next {
+  position: absolute;
+  bottom: 0;
+  right: 400px;
 }
 
 footer {

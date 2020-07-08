@@ -88,6 +88,7 @@ nav{
 #oldNews{
     @include box;
     margin-top: 200px;
+    position: relative;
 
     #slide{
 
@@ -117,10 +118,17 @@ nav{
 
     #page{
         text-align: center;
-        margin-top: 100px;
 
-        p{
-            display: inline;
+        #prev{
+            position: absolute;
+            bottom: 0;
+            left: 400px;
+        }
+
+        #next{
+            position: absolute;
+            bottom: 0;
+            right: 400px;
         }
     }
 }
