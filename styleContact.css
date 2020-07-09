@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Type;
+  src: url(./font/type-font.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/background.png);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: #060f20;
+  z-index: 9999;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c79669;
+}
+
+nav #box {
+  margin: 30px auto;
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 30% 60%;
+      grid-template-columns: 10% 30% 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #box #link {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+#banner {
+  width: 100%;
+  background-image: url(./img/about/banner.png);
+  padding: 210px 0 140px;
+  text-align: center;
+  color: white;
+}
+
+#banner h1 {
+  font-family: Type;
+  font-size: 98px;
+  font-weight: 300;
+}
+
+footer {
+  padding-top: 350px;
+  text-align: center;
+}
+
+footer #connect {
+  width: 600px;
+  margin: 0 auto 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+}
+
+footer #connect #logo p {
+  color: #c79669;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+footer #connect #link {
+  text-align: left;
+}
+
+footer #connect #link div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (35px)[2];
+      grid-template-columns: repeat(2, 35px);
+  grid-gap: 30px;
+}
+
+footer #connect #link p {
+  margin-top: 20px;
+  color: white;
+}
+
+footer #connect #link p img {
+  margin-right: 15px;
+}
+
+footer h5 {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  margin-bottom: 15px;
+}
+
+#right {
+  position: relative;
+}
+
+#right #totop {
+  position: absolute;
+  right: 135px;
+  bottom: 440px;
+}
+
+#right #booking {
+  position: absolute;
+  right: 120px;
+  bottom: 145px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#right #booking p {
+  margin: 11px 0;
+}
+/*# sourceMappingURL=styleContact.css.map */
