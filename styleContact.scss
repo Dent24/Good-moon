@@ -1,4 +1,5 @@
 $gold: #c79669;
+$darkBlue: #515865;
 
 @font-face{
     font-family: Type;
@@ -59,6 +60,109 @@ nav{
         font-family: Type;
         font-size: 98px;
         font-weight: 300;
+    }
+}
+
+#story{
+    @include box;
+    margin-top: 170px;
+
+    > p{
+        margin-bottom: 75px;
+        color: $gold;
+        letter-spacing: 1.4px;
+
+        img{
+            margin-right: 15px;
+        }
+    }
+
+    #map{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+
+        #text{
+            font-size: 16px;
+            letter-spacing: 1.4px;
+            line-height: 1.82;
+        }
+    }
+}
+
+#book{
+    @include box;
+    margin-top: 150px;
+
+    h3{
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 2.8px;
+        margin-bottom: 45px;
+    }
+
+    p{
+        padding-left: 75px;
+        font-size: 16px;
+        letter-spacing: 1.4px;
+        line-height: 1.82;
+    }
+
+    form{
+        margin-top: 20px;
+
+        #eat{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 70px;
+
+            label{
+                display: block;
+                font-size: 14px;
+                letter-spacing: 1.4px;
+                margin-bottom: 15px;
+            }
+
+            #number{
+                width: 100%;
+                background: $darkBlue;
+                color: white;
+                padding: 12px;
+                border: 0;
+                outline: 0;
+            }
+
+            #eatDate{
+                width: 100%;
+                background: $darkBlue;
+                color: white;
+                border: 0;
+                outline: 0;
+                padding: 12px;
+            }
+        }
+
+        h4{
+            margin-top: 20px;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+
+        }
+
+        #time{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-gap: 30px;
+
+            button{
+                padding: 10px 12px;
+                background: $darkBlue;
+                border: 0;
+                outline: 0;
+                color: white;
+            }
+        }
     }
 }
 

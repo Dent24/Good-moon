@@ -61,6 +61,118 @@ nav #box #link {
   font-weight: 300;
 }
 
+#story {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-top: 170px;
+}
+
+#story > p {
+  margin-bottom: 75px;
+  color: #c79669;
+  letter-spacing: 1.4px;
+}
+
+#story > p img {
+  margin-right: 15px;
+}
+
+#story #map {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#story #map #text {
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  line-height: 1.82;
+}
+
+#book {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-top: 150px;
+}
+
+#book h3 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2.8px;
+  margin-bottom: 45px;
+}
+
+#book p {
+  padding-left: 75px;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  line-height: 1.82;
+}
+
+#book form {
+  margin-top: 20px;
+}
+
+#book form #eat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+}
+
+#book form #eat label {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  margin-bottom: 15px;
+}
+
+#book form #eat #number {
+  width: 100%;
+  background: #515865;
+  color: white;
+  padding: 12px;
+  border: 0;
+  outline: 0;
+}
+
+#book form #eat #eatDate {
+  width: 100%;
+  background: #515865;
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 12px;
+}
+
+#book form h4 {
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+#book form #time {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  grid-gap: 30px;
+}
+
+#book form #time button {
+  padding: 10px 12px;
+  background: #515865;
+  border: 0;
+  outline: 0;
+  color: white;
+}
+
 footer {
   padding-top: 350px;
   text-align: center;
