@@ -61,85 +61,6 @@ nav #box #link {
   font-weight: 300;
 }
 
-#news {
-  margin: 0 auto;
-  width: 1200px;
-  color: white;
-  margin-top: 160px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px;
-}
-
-#news div {
-  position: relative;
-}
-
-#news div p {
-  text-align: center;
-  color: black;
-  width: 360px;
-  height: 120px;
-  background: #e5e5e5;
-  position: absolute;
-  left: 15px;
-  bottom: -90px;
-}
-
-#oldNews {
-  margin: 0 auto;
-  width: 1200px;
-  color: white;
-  margin-top: 200px;
-  position: relative;
-}
-
-#oldNews #slide > div #infor {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 46.5% 0.02% 53.48%;
-      grid-template-columns: 46.5% 0.02% 53.48%;
-  grid-gap: 40px;
-}
-
-#oldNews #slide > div #infor #info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 45% 55%;
-      grid-template-columns: 45% 55%;
-  grid-gap: 10px;
-  margin-bottom: 80px;
-}
-
-#oldNews #slide > div #infor #line {
-  width: 2px;
-  height: 450px;
-  background: #c79669;
-}
-
-#oldNews #page {
-  text-align: center;
-}
-
-#oldNews #page a {
-  text-decoration: none;
-  color: white;
-}
-
-#oldNews #page #prev {
-  position: absolute;
-  bottom: -23px;
-  left: 500px;
-}
-
-#oldNews #page #next {
-  position: absolute;
-  bottom: -23px;
-  right: 500px;
-}
-
 footer {
   padding-top: 250px;
   text-align: center;
@@ -211,4 +132,4 @@ footer h5 {
 #right #booking p {
   margin: 11px 0;
 }
-/*# sourceMappingURL=styleNews.css.map */
+/*# sourceMappingURL=styleMenu.css.map */
