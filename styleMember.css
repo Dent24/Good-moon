@@ -61,8 +61,131 @@ nav #box #link {
   font-weight: 300;
 }
 
+#member1 {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-top: 170px;
+  position: relative;
+}
+
+#member1 #sml {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+#member1 #text {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  width: 500px;
+  letter-spacing: 1.4px;
+}
+
+#member1 #text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#member1 #text h4 {
+  font-size: 14px;
+  margin-bottom: 50px;
+  line-height: 1.75;
+}
+
+#member1 #text ul {
+  list-style: none;
+  line-height: 1.82;
+}
+
+#member2 {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-top: 200px;
+  position: relative;
+}
+
+#member2 #sml {
+  position: absolute;
+  top: 400px;
+}
+
+#member2 #big {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#member2 #text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  letter-spacing: 1.4px;
+}
+
+#member2 #text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#member2 #text h4 {
+  font-size: 14px;
+  margin-bottom: 50px;
+  line-height: 1.75;
+}
+
+#member2 #text ul {
+  list-style: none;
+  line-height: 1.82;
+}
+
+#member3 {
+  margin: 0 auto;
+  width: 1200px;
+  color: white;
+  margin-top: 1100px;
+  position: relative;
+}
+
+#member3 #big {
+  z-index: 5;
+}
+
+#member3 #sml {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+#member3 #text {
+  width: 500px;
+  letter-spacing: 1.4px;
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
+
+#member3 #text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#member3 #text h4 {
+  font-size: 14px;
+  margin-bottom: 50px;
+  line-height: 1.75;
+}
+
+#member3 #text ul {
+  list-style: none;
+  line-height: 1.82;
+}
+
 footer {
-  padding-top: 250px;
+  padding-top: 350px;
   text-align: center;
 }
 

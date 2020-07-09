@@ -11,6 +11,27 @@ $gold: #c79669;
     color: white;
 }
 
+@mixin textBox {
+    width: 500px;
+    letter-spacing: 1.4px;
+
+    h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-size: 14px;
+        margin-bottom: 50px;
+        line-height: 1.75;
+    }
+
+    ul{
+        list-style: none;
+        line-height: 1.82;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -62,8 +83,75 @@ nav{
     }
 }
 
+#member1{
+    @include box;
+    margin-top: 170px;
+    position: relative;
+
+    #sml{
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+    }
+
+    #text{
+        position: absolute;
+        right: 0;
+        top: 150px;
+        @include textBox;
+
+    }
+}
+
+#member2{
+    @include box;
+    margin-top: 200px;
+    position: relative;
+
+    #sml{
+        position: absolute;
+        top: 400px;
+    }
+    
+    #big{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #text{
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include textBox;
+    }
+}
+
+#member3{
+    @include box;
+    margin-top: 1100px;
+    position: relative;
+
+    #big{
+        z-index: 5;
+    }
+
+    #sml{
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+    }
+
+    #text{
+        @include textBox;
+        position: absolute;
+        right: 0;
+        top: 150px;
+    }
+}
+
 footer{
-    padding-top: 250px;
+    padding-top: 350px;
     text-align: center;
 
     #connect{
