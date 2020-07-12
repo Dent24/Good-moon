@@ -369,6 +369,7 @@ footer h5 {
   position: fixed;
   right: 0;
   bottom: 0;
+  display: none;
 }
 
 #right #totop {
