@@ -234,9 +234,7 @@ footer h5 {
 }
 
 #right {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: relative;
 }
 
 #right #totop {
