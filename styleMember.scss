@@ -199,7 +199,10 @@ footer{
 }
 
 #right{
-    position: relative;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    // position: relative;
 
 
     #totop{
