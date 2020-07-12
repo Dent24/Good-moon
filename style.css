@@ -80,6 +80,8 @@ body {
 
 #banner #href a img {
   margin-right: 10px;
+  -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+  animation: pulsate-bck 1s ease-in-out infinite both;
 }
 
 #banner #href a p {
@@ -183,6 +185,13 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#about #text div a:hover {
+  color: #c79669;
+  font-size: 24px;
 }
 
 #news {
@@ -287,7 +296,7 @@ body {
   background: #fff;
   position: absolute;
   bottom: 10px;
-  right: 120px;
+  right: 150px;
 }
 
 #menu #text a {
@@ -297,6 +306,13 @@ body {
   right: 60px;
   bottom: 0;
   color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#menu #text a:hover {
+  color: #c79669;
+  font-size: 24px;
 }
 
 #member {
@@ -400,5 +416,35 @@ footer h5 {
 
 #right #booking p {
   margin: 11px 0;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

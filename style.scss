@@ -86,6 +86,8 @@ body{
 
             img{
                 margin-right: 10px;
+                -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+	                    animation: pulsate-bck 1s ease-in-out infinite both;
             }
 
             p{
@@ -186,6 +188,12 @@ body{
                 font-size: 20px;
                 text-decoration: none;
                 color: white;
+                transition-duration: 0.5s;
+
+                &:hover{
+                    color: $gold;
+                    font-size: 24px;
+                }
             }
         }
     }
@@ -281,7 +289,7 @@ body{
             background: #fff;
             position: absolute;
             bottom: 10px;
-            right: 120px;
+            right: 150px;
         }
 
         a{
@@ -291,6 +299,12 @@ body{
             right: 60px;
             bottom: 0;
             color: white;
+            transition-duration: 0.5s;
+
+            &:hover{
+                color: $gold;
+                font-size: 24px;
+            }
         }
     }     
 }
@@ -397,3 +411,34 @@ footer{
         }
     }
 }
+
+// 動畫
+ @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
