@@ -88,6 +88,19 @@ body{
                 margin-right: 10px;
             }
 
+            p{
+                display: inline;
+                opacity: 0;
+                transition-duration: 0.3s;
+            }
+
+            &:hover{
+
+                p{
+                    opacity: 1;
+                }
+            }
+
             &:nth-child(1){
                 top: 530px;
                 left: 790px;

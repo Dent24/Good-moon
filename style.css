@@ -82,6 +82,17 @@ body {
   margin-right: 10px;
 }
 
+#banner #href a p {
+  display: inline;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#banner #href a:hover p {
+  opacity: 1;
+}
+
 #banner #href a:nth-child(1) {
   top: 530px;
   left: 790px;
