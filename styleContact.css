@@ -139,6 +139,7 @@ nav #box #link {
   padding: 12px;
   border: 0;
   outline: 0;
+  border-radius: 5px;
 }
 
 #book form #eat #eatDate {
@@ -148,6 +149,7 @@ nav #box #link {
   border: 0;
   outline: 0;
   padding: 12px;
+  border-radius: 5px;
 }
 
 #book form h4 {
@@ -156,13 +158,20 @@ nav #box #link {
   letter-spacing: 1.4px;
 }
 
+#book form h5 {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #676a72;
+}
+
 #book form #time {
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
 }
 
 #book form #time button {
@@ -171,6 +180,28 @@ nav #box #link {
   border: 0;
   outline: 0;
   color: white;
+  border-radius: 5px;
+}
+
+#book form #time button:nth-child(3), #book form #time button:nth-child(6), #book form #time button:nth-child(7) {
+  background: #1f2839;
+  color: #515865;
+}
+
+#book form #submit {
+  margin: 60px 500px;
+  padding: 10px 0px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  background: #98886a;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+#book form #submit:hover {
+  background: #c79669;
 }
 
 footer {
