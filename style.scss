@@ -61,6 +61,10 @@ body{
     }
 }
 
+#menu1{
+    display: none;
+}
+
 #banner{
     width: 100%;
     height: 100vh;
@@ -252,6 +256,10 @@ body{
             }
         }
 
+        img{
+            width: 100%;
+        }
+
         &:nth-child(2),&:nth-child(4){
             #text{
                 background: $yellow0;
@@ -285,6 +293,10 @@ body{
         position: absolute;
         bottom: 572px;
         right: 100px;
+    }
+
+    #padImg{
+        display: none;
     }
 
     #text{
@@ -333,9 +345,14 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 80px;
 
+    h1{
+        display: none;
+    }
+
     div{
         a{
             img{
+                width: 100%;
                 filter: grayscale(50%);
 
                 &:hover{
@@ -436,6 +453,221 @@ footer{
         p{
             margin: 11px 0;
         }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+
+    @mixin pad-box {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    #nav{
+        display: none !important;
+    }
+
+    #menu1{
+        width: 100%;
+        
+        position: fixed;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 9999;
+
+        a{
+            margin-right: 20px;
+            display: none;
+            text-decoration: none;
+            color: $gold;
+            font-size: 20px;
+            text-align: center;
+
+            &:nth-child(1){
+                display: block;
+                text-align: right;
+            }
+        }
+
+
+
+        &:hover{
+            background-image: url(./img/background.png);
+
+            a:nth-child(n+2){
+                display: block;
+                padding: 20px 0px;
+                padding-left: 30px;
+            }
+        } 
+    }
+
+    #banner{
+        width: 100%;
+        display: grid;
+        align-items: center;
+
+        #href{
+            display: none;
+        }
+
+        #logo{
+            img{
+                width: 220px;
+            }
+
+            span{
+                font-size: 40px;
+            }
+        }
+    }
+
+    #about{
+        @include pad-box();
+        margin-top: 60px;
+        display: grid;
+        position: static;
+
+        h1{
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        #text{
+            position: static;
+            width: 100%;
+
+            div{
+                position: static;
+                text-align: right;
+
+                #line{
+                    display: none;
+                }
+
+                a{
+                    &:hover{
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    #news{
+        @include pad-box();
+
+        h1{
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        > div{
+            grid-template-columns: 55% 45%;
+
+            #text{
+                padding-top: 40px;
+                padding-left: 40px;
+
+                h3{
+                    font-size: 25px;
+                    letter-spacing: normal;
+                    margin-bottom: 20px;
+                }
+            }
+
+            #line{
+                display: none;
+            }
+
+            &:nth-child(2),&:nth-child(4){
+                background: $yellow;
+            }
+
+            &:nth-child(3){
+                background: $blue;
+            }
+        }
+    }
+
+    #menu{
+        @include pad-box();
+        position: static;
+        margin-top: 130px;
+
+        h1{
+            position: static;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        #deskImg{
+            display: none;
+        }
+
+        #padImg{
+            display: block;
+            width: 100%;
+        }
+
+        #text{
+            position: static;
+            width: 100%;
+            padding: 0;
+            padding-top: 30px;
+
+            #line{
+                display: none;
+            }
+
+            a{
+                position: static;
+                padding-top: 30px;
+
+                &:hover{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #member{
+        width: 750px;
+        margin-top: 120px;
+
+        h1{
+            text-align: center;
+            display: block;
+            grid-column: 1 / 4;
+            font-size: 40px;
+            font-family: Type;
+            color: rgba($color: #ffffff, $alpha: 0.5);
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        div{
+            a{
+                img{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
+
+    #right{
+        display: none !important;
     }
 }
 
