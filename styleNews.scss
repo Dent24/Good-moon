@@ -1,4 +1,6 @@
 $gold: #c79669;
+$yellow: #a1895c;
+$blue: #253856;
 
 @font-face{
     font-family: Type;
@@ -71,16 +73,40 @@ nav{
     
     div{
         position: relative;
+
+        img{
+            width: 100%;
+        }
         
-        p{
-            text-align: center;
-            color: black;
+        #text{
+            padding: 20px 30px;
+            color: white;
             width: 360px;
-            height: 120px;
-            background: #e5e5e5;
+            background: $blue;
             position: absolute;
             left: 15px;
             bottom: -90px;
+
+            p{
+                font-size: 12px;
+                font-weight: 200;
+                margin-bottom: 20px;
+                font-style: italic;
+            }
+
+            h4{
+                font-size: 24px;
+                font-weight: 300;
+            }
+
+            &:hover{
+                background: $yellow;
+                color: black;
+
+                h4{
+                    font-weight: 350;
+                }
+            }
         }
     }
 }
@@ -100,17 +126,52 @@ nav{
                 grid-template-columns: 46.5% 0.02% 53.48% ;
                 grid-gap: 40px;
                 
-                #info{
+                #info1{
                     display: grid;
                     grid-template-columns: 45% 55%;
                     grid-gap: 10px;
                     margin-bottom: 80px;
+
+                    #text{
+                        padding-top: 20px;
+
+                        h3{
+                            font-size: 12px;
+                            font-style: italic;
+                            margin-bottom: 20px;
+                        }
+
+                        p{
+                            font-size: 18px;
+                        }
+                    }
                 }
     
                 #line{
                     width: 2px;
                     height: 450px;
                     background: $gold;
+                }
+
+                #info2{
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    grid-gap: 10px;
+                    margin-bottom: 80px;
+
+                    #text{
+                        padding-top: 20px;
+
+                        h3{
+                            font-size: 12px;
+                            font-style: italic;
+                            margin-bottom: 20px;
+                        }
+
+                        p{
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
         }

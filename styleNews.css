@@ -77,15 +77,39 @@ nav #box #link {
   position: relative;
 }
 
-#news div p {
-  text-align: center;
-  color: black;
+#news div img {
+  width: 100%;
+}
+
+#news div #text {
+  padding: 20px 30px;
+  color: white;
   width: 360px;
-  height: 120px;
-  background: #e5e5e5;
+  background: #253856;
   position: absolute;
   left: 15px;
   bottom: -90px;
+}
+
+#news div #text p {
+  font-size: 12px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#news div #text h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#news div #text:hover {
+  background: #a1895c;
+  color: black;
+}
+
+#news div #text:hover h4 {
+  font-weight: 350;
 }
 
 #oldNews {
@@ -104,7 +128,7 @@ nav #box #link {
   grid-gap: 40px;
 }
 
-#oldNews #slide > div #infor #info {
+#oldNews #slide > div #infor #info1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 45% 55%;
@@ -113,10 +137,47 @@ nav #box #link {
   margin-bottom: 80px;
 }
 
+#oldNews #slide > div #infor #info1 #text {
+  padding-top: 20px;
+}
+
+#oldNews #slide > div #infor #info1 #text h3 {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#oldNews #slide > div #infor #info1 #text p {
+  font-size: 18px;
+}
+
 #oldNews #slide > div #infor #line {
   width: 2px;
   height: 450px;
   background: #c79669;
+}
+
+#oldNews #slide > div #infor #info2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+  margin-bottom: 80px;
+}
+
+#oldNews #slide > div #infor #info2 #text {
+  padding-top: 20px;
+}
+
+#oldNews #slide > div #infor #info2 #text h3 {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#oldNews #slide > div #infor #info2 #text p {
+  font-size: 18px;
 }
 
 #oldNews #page {
