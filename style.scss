@@ -1,5 +1,9 @@
 $gold: #c79669;
 $gray: #d6bb89;
+$yellow: #a1895c;
+$yellow0: rgba($color: #a1895c, $alpha: 0.5);
+$blue: #253856;
+$blue0: rgba($color: #253856, $alpha: 0.5);
 
 @font-face{
     font-family: Type;
@@ -214,9 +218,8 @@ body{
         margin-bottom: 8px;
 
         #text{
-            padding: 75px 25px 0px 90px;
+            padding: 65px 25px 0px 90px;
             position: relative;
-            background-image: url(./img/news/news-bg1.png);
 
             h3{
                font-size: 30px;
@@ -245,13 +248,28 @@ body{
                 background: #fff;
                 position: absolute;
                 right: 0;
-                bottom: 50px;
+                bottom: 40px;
+            }
+        }
+
+        &:nth-child(2),&:nth-child(4){
+            #text{
+                background: $yellow0;
+                transition-duration: 1s;
+
+            }
+            &:hover{
+                background: $yellow;
             }
         }
 
         &:nth-child(3){
             #text{
-                background-image: url(./img/news/news-bg2.png);
+                background: $blue0;
+                transition-duration: 1s;
+            }
+            &:hover{
+                background: $blue;
             }
         }
     }
@@ -316,6 +334,15 @@ body{
     grid-gap: 80px;
 
     div{
+        a{
+            img{
+                filter: grayscale(50%);
+
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+        }
 
         #text{
             text-align: center;
